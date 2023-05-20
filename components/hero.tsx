@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import H1 from './ui/h1';
 
 export default function Hero() {
   return (
@@ -7,17 +8,20 @@ export default function Hero() {
       id="home"
       className="mt-12 flex h-screen w-full flex-col bg-zinc-100 pt-20"
     >
-      <div className="mx-auto my-0 max-w-5xl px-16" id="container">
+      <div
+        className="mx-auto my-0 px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-lg"
+        id="container"
+      >
         <div
           className="relative flex flex-col justify-center gap-10"
           id="content"
         >
           <div className="relative flex items-center gap-28">
-            <div className="relative flex max-w-3xl flex-col">
-              <h1 className="my-8 text-6xl font-semibold text-slate-900">
+            <div className="relative flex flex-col">
+              <H1 size={'lg'} className="my-8 text-slate-900">
                 Full-Stack .NET Developer
                 <span className="ml-4">👋🏼</span>
-              </h1>
+              </H1>
               <p className="text-base font-medium text-slate-500">
                 Hi, I'm Benjamin Lurquin. A passionate Full-Stack .NET Developer
                 based in Brussels, Belgium. 📍
