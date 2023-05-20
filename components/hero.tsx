@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="mt-12 flex h-screen w-full flex-col bg-zinc-100 pt-20"
+      className="mt-12 flex h-screen w-full flex-col bg-zinc-100 pt-20 dark:bg-slate-900"
     >
       <div
         className="mx-auto my-0 px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-lg"
@@ -22,7 +22,7 @@ export default function Hero() {
                 Full-Stack .NET Developer
                 <span className="ml-4">👋🏼</span>
               </H1>
-              <p className="text-base font-medium text-slate-500">
+              <p className="text-base font-medium text-slate-500 dark:text-slate-400">
                 Hi, I'm Benjamin Lurquin. A passionate Full-Stack .NET Developer
                 based in Brussels, Belgium. 📍
               </p>
@@ -36,6 +36,7 @@ export default function Hero() {
                     alt="LinkedIn"
                     height="30"
                     width="30"
+                    className="dark:bg-slate-300"
                   />
                 </Link>
               </span>

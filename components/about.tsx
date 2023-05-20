@@ -26,7 +26,7 @@ export default function About() {
         <div className="w-1/2">
           <H2>About me</H2>
           <H1 className="mb-4">
-            A dedicated Front-end Developer based in Brussels, Belgium 📍
+            A dedicated Full-Stack .NET Developer based in Brussels, Belgium 📍
           </H1>
           <p className="font-medium text-slate-500">
             .NET Architect with customer-oriented and service-minded attitude.
