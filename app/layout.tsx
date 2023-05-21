@@ -2,7 +2,10 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['500', '600', '700'] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        id="home"
         className={cn('text-slate-900 dark:text-slate-300', poppins.className)}
       >
         {children}
