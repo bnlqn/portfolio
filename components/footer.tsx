@@ -17,7 +17,7 @@ export default function Footer() {
   ];
   return (
     <section className="bg-slate-950 px-4 py-12">
-      <div className="mx-auto w-full sm:max-w-xl md:max-w-full lg:max-w-screen-lg">
+      <div className="mx-auto w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-screen-lg">
         <div className="flex items-center justify-between">
           <h3 className="text-xl font-bold text-zinc-100">
             Copyright &copy; 2023. All rights are reserved

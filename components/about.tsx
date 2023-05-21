@@ -7,7 +7,7 @@ import aboutPic from '../public/about.webp';
 export default function About() {
   return (
     <section className="bg-white px-4 py-20 dark:bg-slate-950 " id="about">
-      <div className="mx-auto w-full sm:max-w-xl md:max-w-full lg:max-w-screen-lg">
+      <div className="mx-auto w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-screen-lg">
         <div className="flex flex-col justify-between gap-20 lg:flex-row">
           <div className="relative lg:w-1/2">
             <span className="absolute bottom-3 right-3 z-40 text-7xl">👨‍💻</span>

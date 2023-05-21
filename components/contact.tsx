@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <section className="bg-white px-4 py-20 dark:bg-slate-950 " id="contact">
-      <div className="mx-auto w-full sm:max-w-xl md:max-w-full lg:max-w-screen-lg">
+      <div className="mx-auto w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-screen-lg">
         <H2>Contact</H2>
         <H1>Don't be shy! Hit me up! 👇</H1>
         <div className="mt-16 flex flex-wrap gap-32">
