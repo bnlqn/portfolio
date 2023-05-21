@@ -40,14 +40,8 @@ export default function Hero() {
       id="home"
       className="mt-12 flex min-h-screen w-full flex-col bg-zinc-100 pt-20 dark:bg-slate-900"
     >
-      <div
-        className="mx-auto my-0 px-4 sm:max-w-xl md:max-w-full lg:max-w-screen-lg"
-        id="container"
-      >
-        <div
-          className="relative flex flex-col justify-center gap-10"
-          id="content"
-        >
+      <div className="mx-auto my-0 w-full max-w-sm px-4 sm:max-w-lg md:max-w-2xl lg:max-w-screen-lg">
+        <div className="relative flex flex-col justify-center gap-10">
           <div className="relative flex flex-col-reverse items-center gap-28 lg:flex-row">
             <div className="relative flex flex-col">
               <H1 size={'lg'} className="my-8 text-slate-900">
