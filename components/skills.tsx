@@ -154,8 +154,8 @@ export default function Skills() {
         <H1 className="mb-16">
           Showcasing achievements and technical expertise 💪
         </H1>
-        <div className="mt-4 flex flex-row gap-24">
-          <div className="flex flex-1 flex-wrap items-start justify-start gap-8">
+        <div className="mx-auto mt-4 flex flex-col gap-24 lg:flex-row">
+          <div className="flex flex-1 flex-wrap items-start justify-center gap-8 lg:justify-start">
             {skills
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((item) => (
@@ -171,7 +171,7 @@ export default function Skills() {
                 </div>
               ))}
           </div>
-          <div className="flex flex-1 flex-col items-start justify-start">
+          <div className="flex flex-1 flex-col items-start justify-center lg:justify-start">
             {experiences.map((item) => (
               <div className="my-4 flex flex-row items-start justify-start">
                 <div className="mr-12">
@@ -180,7 +180,7 @@ export default function Skills() {
                 <div className="flex-1">
                   <div className="mb-4 flex flex-col items-start justify-start">
                     <div className="font-medium">{item.position}</div>
-                    <div className="mt-2 text-sm font-normal text-slate-500">
+                    <div className="mt-2 text-sm font-normal text-slate-500 dark:text-slate-400">
                       {item.company}
                     </div>
                   </div>

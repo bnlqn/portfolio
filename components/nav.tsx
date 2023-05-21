@@ -26,7 +26,7 @@ export default function Nav() {
       <h3 className="cursor-pointer font-bold text-slate-900 dark:text-slate-300">
         Benjamin Lurquin
       </h3>
-      <ul className="flex gap-8 text-base font-semibold">
+      <ul className="hidden gap-8 text-base font-semibold md:flex">
         {links.map((item) => (
           <li>
             <Link

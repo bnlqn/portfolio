@@ -48,7 +48,7 @@ export default function Hero() {
           className="relative flex flex-col justify-center gap-10"
           id="content"
         >
-          <div className="relative flex items-center gap-28">
+          <div className="relative flex flex-col-reverse items-center gap-28 lg:flex-row">
             <div className="relative flex flex-col">
               <H1 size={'lg'} className="my-8 text-slate-900">
                 Full-Stack .NET Developer
@@ -68,8 +68,8 @@ export default function Hero() {
             </div>
             <div className="relative h-96 w-96 animate-[morph_8s_ease-in-out_infinite] rounded-[60%_40%_30%_70%/60%_30%_70%_40%] border-4 border-slate-900 bg-[url('/profile.webp')] bg-cover bg-center bg-no-repeat dark:border-indigo-900"></div>
           </div>
-          <div className="mb-16 flex items-center">
-            <p className="mr-28 border-r border-slate-800 pr-8 font-semibold dark:border-slate-300">
+          <div className="mb-16 flex flex-col items-center lg:flex-row">
+            <p className="mb-12 border-b border-slate-800 pb-4 font-semibold dark:border-slate-300 lg:mr-28 lg:border-b-0 lg:border-r lg:pr-8">
               Tech Stack
             </p>
             <div id="logos" className="">
