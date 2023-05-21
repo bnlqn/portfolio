@@ -10,7 +10,7 @@ export default function Footer() {
       icon: BsLinkedin,
     },
     {
-      name: 'Angular',
+      name: 'Github',
       href: 'https://github.com/bnlqn',
       icon: BsGithub,
     },
@@ -24,7 +24,7 @@ export default function Footer() {
           </h3>
           <div className="flex gap-8">
             {socials.map((item) => (
-              <Link target="_blank" href={item.href}>
+              <Link target="_blank" href={item.href} title={item.name}>
                 <item.icon className="h-4 w-4 text-zinc-100 transition hover:text-indigo-500 dark:text-slate-300 dark:hover:text-indigo-400 lg:h-6 lg:w-6" />
               </Link>
             ))}

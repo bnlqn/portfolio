@@ -5,6 +5,12 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import csharp from '../public/csharp.svg';
 import angular from '../public/angular.svg';
 import react from '../public/react.svg';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 export default function Hero() {
   const technologies = [
@@ -29,7 +35,7 @@ export default function Hero() {
       icon: BsLinkedin,
     },
     {
-      name: 'Angular',
+      name: 'Github',
       href: 'https://github.com/bnlqn',
       icon: BsGithub,
     },
@@ -54,7 +60,7 @@ export default function Hero() {
               </p>
               <span className="my-10 flex cursor-pointer gap-5">
                 {socials.map((item) => (
-                  <Link target="_blank" href={item.href}>
+                  <Link target="_blank" href={item.href} title={item.name}>
                     <item.icon className="h-8 w-8 transition hover:text-indigo-500 dark:text-slate-300 dark:hover:text-indigo-400" />
                   </Link>
                 ))}
@@ -67,18 +73,26 @@ export default function Hero() {
               Tech Stack
             </p>
             <div id="logos" className="">
-              <ul className="flex list-none flex-wrap gap-9">
-                {technologies.map((item) => (
-                  <li className="flex cursor-pointer items-center rounded-full bg-white p-4 shadow-md dark:bg-slate-700">
-                    <Image
-                      src={item.image}
-                      className="h-10 w-10"
-                      alt={item.name}
-                      title={item.name}
-                    />
-                  </li>
-                ))}
-              </ul>
+              <TooltipProvider delayDuration={100}>
+                <ul className="flex list-none flex-wrap gap-9">
+                  {technologies.map((item) => (
+                    <li className="flex cursor-pointer items-center rounded-full bg-white p-4 shadow-md dark:bg-slate-700">
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Image
+                            src={item.image}
+                            className="h-10 w-10"
+                            alt={item.name}
+                          />
+                        </TooltipTrigger>
+                        <TooltipContent className="mb-4">
+                          <p>{item.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </li>
+                  ))}
+                </ul>
+              </TooltipProvider>
             </div>
           </div>
         </div>

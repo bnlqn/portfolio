@@ -9,10 +9,8 @@ export default function About() {
     <section className="bg-white px-4 py-20 dark:bg-slate-950 " id="about">
       <div className="mx-auto w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-screen-lg">
         <div className="flex flex-col justify-between gap-20 lg:flex-row">
-          <div className="relative lg:w-1/2">
-            <span className="absolute bottom-3 right-3 z-40 text-7xl">👨‍💻</span>
+          <div className="lg:w-1/2">
             <Image src={aboutPic} className="rounded-2xl" alt="About image" />
-            <span className="absolute -bottom-10 -right-9 h-40 w-40 rounded-full bg-white dark:bg-slate-900"></span>
           </div>
           <div className="lg:w-1/2">
             <H2>About me</H2>

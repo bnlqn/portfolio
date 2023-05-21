@@ -16,6 +16,12 @@ import sass from '../public/sass.svg';
 import azure from '../public/azure.svg';
 import xamarin from '../public/xamarin.svg';
 import Image from 'next/image';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 export default function Skills() {
   const skills = [
@@ -172,21 +178,30 @@ export default function Skills() {
               ))}
           </div>
           <div className="flex flex-1 flex-col items-start justify-center lg:justify-start">
-            {experiences.map((item) => (
-              <div className="my-4 flex flex-row items-start justify-start">
-                <div className="mr-12">
-                  <div className="font-bold text-indigo-500">{item.year}</div>
-                </div>
-                <div className="flex-1">
-                  <div className="mb-4 flex flex-col items-start justify-start">
-                    <div className="font-medium">{item.position}</div>
-                    <div className="mt-2 text-sm font-normal text-slate-500 dark:text-slate-400">
-                      {item.company}
-                    </div>
+            <TooltipProvider delayDuration={100}>
+              {experiences.map((item) => (
+                <div className="my-4 flex flex-row items-start justify-start">
+                  <div className="mr-12">
+                    <div className="font-bold text-indigo-500">{item.year}</div>
+                  </div>
+                  <div className="flex-1">
+                    <Tooltip>
+                      <TooltipTrigger asChild className="cursor-pointer">
+                        <div className="mb-4 flex flex-col items-start justify-start">
+                          <div className="font-medium">{item.position}</div>
+                          <div className="mt-2 text-sm font-normal text-slate-500 dark:text-slate-400">
+                            {item.company}
+                          </div>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent className="mb-2 max-w-xs">
+                        <p>{item.description}</p>
+                      </TooltipContent>
+                    </Tooltip>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </TooltipProvider>
           </div>
         </div>
       </div>
