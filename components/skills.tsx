@@ -152,7 +152,7 @@ export default function Skills() {
       <div className="mx-auto w-full sm:max-w-xl md:max-w-full lg:max-w-screen-lg">
         <H2>Skills & Experiences</H2>
         <H1 className="mb-16">
-          Showcasing Proficient Achievements and Technical Expertise 💪
+          Showcasing achievements and technical expertise 💪
         </H1>
         <div className="mt-4 flex flex-row gap-24">
           <div className="flex flex-1 flex-wrap items-start justify-start gap-8">
