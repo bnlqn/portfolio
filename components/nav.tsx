@@ -22,7 +22,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-white px-12 py-6 text-2xl shadow shadow-slate-200 dark:bg-slate-800 dark:shadow-slate-700">
+    <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-white px-12 py-6 text-2xl shadow shadow-slate-200 dark:bg-slate-950 dark:shadow-slate-800">
       <h3 className="cursor-pointer font-bold text-slate-900 dark:text-slate-300">
         Benjamin Lurquin
       </h3>
@@ -31,7 +31,7 @@ export default function Nav() {
           <li>
             <Link
               href={item.href}
-              className="transition duration-200 hover:text-indigo-500 dark:text-slate-300"
+              className="transition duration-200 hover:text-indigo-500 dark:text-slate-300 dark:hover:text-indigo-400"
             >
               {item.name}
             </Link>

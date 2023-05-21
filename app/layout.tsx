@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 
@@ -15,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={cn('text-slate-900 dark:text-slate-300', poppins.className)}
+      >
+        {children}
+      </body>
     </html>
   );
 }
