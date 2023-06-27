@@ -15,7 +15,7 @@ export default function About() {
           <div className="lg:w-1/2">
             <H2>About me</H2>
             <H1 className="mb-4">
-              An experienced .NET Developer based in Brussels, Belgium 📍
+              An experienced .NET Developer based in Warsaw, Poland 📍
             </H1>
             <p className="mb-4 font-medium text-slate-500 dark:text-slate-300">
               I'm an experienced .NET Developer with over 10+ years of expertise

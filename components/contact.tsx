@@ -36,9 +36,9 @@ export default function Contact() {
               <div>
                 <Link
                   className="text-slate-500 transition hover:text-indigo-500 dark:text-slate-400"
-                  href="tel:+32473222294"
+                  href="tel:+48885189293"
                 >
-                  +32 473 22 22 94
+                  +48 885 189 293
                 </Link>
               </div>
             </div>

@@ -56,7 +56,7 @@ export default function Hero() {
               </H1>
               <p className="text-base font-medium text-slate-500 dark:text-slate-200">
                 Hi, I'm Benjamin. A passionate Full-Stack .NET Developer based
-                in Brussels, Belgium. 📍
+                in Warsaw, Poland. 📍
               </p>
               <span className="my-10 flex cursor-pointer gap-5">
                 {socials.map((item) => (
