@@ -1,17 +1,12 @@
+import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
+import { Viewport } from 'next';
 import './globals.css';
-import { Poppins } from 'next/font/google';
-import Providers from '@/components/providers';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-});
 
 export const metadata = {
-  title: 'Benjamin Lurquin - Full-Stack .NET Developer',
+  title: 'Benjamin Lurquin',
   description:
-    'Experienced .NET Developer | 10+ Years of Expertise | C#, .NET Core, Angular, React | Delivering Outstanding Software | Seeking to Make a Positive Impact',
+    'Benjamin lurquin is an experienced .NET Developer with 10+ Years of Expertise on C#, .NET Core, Angular, React',
   keywords: [
     '.NET',
     'Developer',
@@ -29,14 +24,15 @@ export const metadata = {
     },
   ],
   creator: 'Benjamin Lurquin',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#0f172a',
+  width: 'device-width',
 };
 
 export default function RootLayout({
@@ -45,15 +41,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        id="home"
         className={cn(
-          'text-slate-900 antialiased dark:text-slate-300',
-          poppins.className
+          'bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900',
+          fontSans.variable
         )}
       >
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );
