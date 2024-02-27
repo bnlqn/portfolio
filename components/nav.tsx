@@ -36,7 +36,7 @@ export default function Nav() {
           <Link href="/">Benjamin Lurquin</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          .NET Developer at Elia
+          Senior .NET Engineer at Elia
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
           I build pixel-perfect, engaging, and accessible digital experiences.
