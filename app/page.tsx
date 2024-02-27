@@ -2,6 +2,7 @@ import About from '@/components/about';
 import CustomCursor from '@/components/custom-cursor';
 import Experience from '@/components/experience';
 import Nav from '@/components/nav';
+import Projects from '@/components/projects';
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
             <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
               <About />
               <Experience />
-              {/* <Contact /> */}
+              <Projects />
             </main>
           </div>
         </div>
