@@ -6,7 +6,7 @@ import './globals.css';
 export const metadata = {
   title: 'Benjamin Lurquin',
   description:
-    'Benjamin lurquin is an experienced .NET Developer with 10+ Years of Expertise on C#, .NET Core, Angular, React',
+    'Benjamin Lurquin is an experienced full-stack .NET Developer with 10+ Years of Expertise on C#, .NET Core, Angular & React',
   keywords: [
     '.NET',
     'Developer',
