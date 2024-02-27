@@ -11,11 +11,6 @@ const CustomCursor = () => {
       const { pageX, pageY } = ev;
       spotlightRef.current.style.setProperty('--x', `${pageX}px`);
       spotlightRef.current.style.setProperty('--y', `${pageY}px`);
-      // spotlightRef.current.style.setProperty('background', `${clientY}px`);
-      // spotlightRef.current.style.setProperty(
-      //   'background',
-      //   `radial-gradient(600px at ${clientX}px ${clientY}px, rgba(29, 78, 216, 0.15), transparent 80%);`
-      // );
     };
 
     window.addEventListener('mousemove', updateMousePosition);
