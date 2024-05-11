@@ -219,7 +219,7 @@ export default function Experience() {
         <div className="mt-12">
           <Link
             className="group/link inline-flex items-baseline text-base font-semibold leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="/resume.pdf"
+            href="/resume-benjamin-lurquin.pdf"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"
