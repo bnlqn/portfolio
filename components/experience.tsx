@@ -10,7 +10,13 @@ export default function Experience() {
       href: 'https://www.elia.be',
       description:
         'Transform data into a valuable product. My focus lies in treating data as a strategic asset, ensuring its accessibility and usability across our organization. This involves leveraging cloud infrastructure and redundancy mechanisms to guarantee high availability of datasets, establishing clear contracts and SLAs to provide clarity on data usage, and offering comprehensive guidance and documentation throughout the data lifecycle. Through these efforts, I empower stakeholders to harness the full potential of our datasets, enabling informed decision-making and driving innovation within our organization.',
-      technologies: ['C#', '.NET Core', 'Azure', 'Redis', 'RabbitMQ'],
+      technologies: [
+        'C#',
+        '.NET Core',
+        'Azure Databricks',
+        'Redis',
+        'RabbitMQ',
+      ],
     },
     {
       start: '2021',

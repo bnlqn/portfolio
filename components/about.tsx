@@ -14,69 +14,30 @@ export default function About() {
       </div>
       <div>
         <p className="mb-4 text-pretty">
-          As a kid, I was that wide-eyed youngster who couldn't get enough of
-          tinkering with computers. At the tender age of 7, I dipped my toes
-          into the{' '}
-          <Link
-            href="/ms-vb.png"
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="world of coding (opens in a new tab)"
-          >
-            world of coding
-          </Link>
-          , and from that moment on, I was hooked. By 12, I'd already crafted my
-          first website, setting the stage for a lifelong journey in digital
-          creation. Fast forward to today, and those childhood experiences have
-          shaped who I am and what I do.
+          I specialize in building user interfaces that merge elegant design
+          with technical excellence. My work focuses on creating accessible
+          experiences where no detail is overlooked – from pixel-perfect layouts
+          to optimized performance. What drives me is the sweet spot between
+          visual design and engineering, where beautiful interfaces meet
+          rock-solid implementation.
         </p>
         <p className="mb-4 text-pretty">
-          Today, I'm a seasoned consultant, specializing mostly in the{' '}
+          Today, I work at{' '}
           <Link
-            href="https://swift.com"
+            href="https://elia.be"
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="banking (opens in a new tab)"
           >
-            banking
-          </Link>{' '}
-          and{' '}
-          <Link
-            href="https://engie.be"
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="energy (opens in a new tab)"
-          >
-            energy
-          </Link>{' '}
-          sectors. It's been quite the ride since graduating in 2011,
-          collaborating with a diverse range of clients, from{' '}
-          <Link
-            href="https://group.bnpparibas"
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="industry giants (opens in a new tab)"
-          >
-            industry giants
-          </Link>{' '}
-          to{' '}
-          <Link
-            href="https://ringring.be"
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="smaller enterprises (opens in a new tab)"
-          >
-            smaller enterprises
+            Elia
           </Link>
-          . What really drives me is the sweet spot where design and engineering
-          intersect. I thrive on building software that not only looks sleek but
-          also functions flawlessly under the hood, delivering top-notch
-          experiences to users.
+          , where we manage Belgium's electricity grid to keep the lights on for
+          millions of people. My job is to help the company make better use of
+          its data. I set up systems in the cloud that make important
+          information easy to find and use. By writing clear guidelines and
+          building reliable systems, I help my colleagues use data to improve
+          how we deliver electricity to homes and businesses.
         </p>
         <p className="text-pretty">
           When I'm not knee-deep in code or immersed in client projects, you'll
