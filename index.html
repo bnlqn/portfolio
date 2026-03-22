@@ -31,12 +31,12 @@
     flex-direction: column;
     align-items: flex-end;
     
-    filter: 
-      drop-shadow(1px 1px 0px var(--dark-blue))
-      drop-shadow(2px 2px 0px var(--dark-blue))
-      drop-shadow(4px 4px 0px var(--dark-blue))
-      drop-shadow(8px 8px 0px var(--dark-blue))
-      drop-shadow(16px 16px 0px var(--dark-blue));
+    filter:
+      drop-shadow(clamp(0.31px, 0.111vw, 1px) clamp(0.31px, 0.111vw, 1px) 0px var(--dark-blue))
+      drop-shadow(clamp(0.63px, 0.223vw, 2px) clamp(0.63px, 0.223vw, 2px) 0px var(--dark-blue))
+      drop-shadow(clamp(1.25px, 0.445vw, 4px) clamp(1.25px, 0.445vw, 4px) 0px var(--dark-blue))
+      drop-shadow(clamp(2.5px, 0.89vw, 8px) clamp(2.5px, 0.89vw, 8px) 0px var(--dark-blue))
+      drop-shadow(clamp(5px, 1.78vw, 16px) clamp(5px, 1.78vw, 16px) 0px var(--dark-blue));
   }
 
   .text {
